@@ -1,0 +1,50 @@
+﻿<Window x:Class="DroneClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DroneClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="400">
+    <Grid Margin="10,10,10,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Test Recive Data-->
+        <TextBlock Text="Odebrane Dane: " Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBlock Margin="10,5,0,5" Name="ReciveDataTextBlock" Grid.Column="1" VerticalAlignment="Center" TextWrapping="WrapWithOverflow"/>
+
+        <!--Adres-->
+        <TextBlock Text="Adres: " Grid.Column="0" Grid.Row="1" VerticalAlignment="Center"/>
+        <TextBox Margin="10,5,0,5" Name="AdressTextBox" Grid.Column="1" Grid.Row="1" Text="127.0.0.1"/>
+
+        <!--Port-->
+        <TextBlock Text="Port: " Grid.Column="0" Grid.Row="2" VerticalAlignment="Center"/>
+        <TextBox Margin="10,5,0,5" Name="PortTextBox" Grid.Column="1" Grid.Row="2" Text="6500"/>
+
+        <!--Error-->
+        <TextBlock Text="Błędy: " Grid.Column="0" Grid.Row="3" VerticalAlignment="Center"/>
+        <TextBlock Margin="10,5,0,5" Name="ErrorTextBlock" Grid.Column="1" Grid.Row="3" TextWrapping="WrapWithOverflow"/>
+
+        <Button 
+            Name="ConnectionTestButton" 
+            Grid.ColumnSpan="2" 
+            Grid.Row="4" 
+            Margin="0,10,0,10" 
+            MinHeight="20" 
+            MaxWidth="100" 
+            HorizontalAlignment="Center"
+            Content="Test połączenia"
+            Click="ConnectionTestButton_Click"/>
+
+    </Grid>
+</Window>
