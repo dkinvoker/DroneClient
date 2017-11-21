@@ -13,6 +13,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -25,15 +27,15 @@
 
         <!--Adres-->
         <TextBlock Text="Adres: " Grid.Column="0" Grid.Row="1" VerticalAlignment="Center"/>
-        <TextBox Margin="10,5,0,5" Name="AdressTextBox" Grid.Column="1" Grid.Row="1" Text="127.0.0.1"/>
+        <TextBox Margin="10,5,0,5" Name="AdressTextBox" Grid.Column="1" Grid.Row="1" Text="192.168.2.101"/>
 
         <!--Port-->
         <TextBlock Text="Port: " Grid.Column="0" Grid.Row="2" VerticalAlignment="Center"/>
         <TextBox Margin="10,5,0,5" Name="PortTextBox" Grid.Column="1" Grid.Row="2" Text="6500"/>
 
         <!--Error-->
-        <TextBlock Text="Błędy: " Grid.Column="0" Grid.Row="3" VerticalAlignment="Center"/>
-        <TextBlock Margin="10,5,0,5" Name="ErrorTextBlock" Grid.Column="1" Grid.Row="3" TextWrapping="WrapWithOverflow"/>
+        <TextBlock Text="Komunikaty: " Grid.Column="0" Grid.Row="3" VerticalAlignment="Center"/>
+        <TextBlock Margin="10,5,0,5" Name="LogTextBlock" Grid.Column="1" Grid.Row="3" TextWrapping="WrapWithOverflow"/>
 
         <Button 
             Name="ConnectionTestButton" 
@@ -45,6 +47,8 @@
             HorizontalAlignment="Center"
             Content="Test połączenia"
             Click="ConnectionTestButton_Click"/>
+
+        <TextBlock Grid.ColumnSpan="2" Grid.Row="6" Name="FromSimulatorTextBlock" TextWrapping="WrapWithOverflow"/>
 
     </Grid>
 </Window>
