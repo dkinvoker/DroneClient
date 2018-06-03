@@ -36,9 +36,6 @@ namespace DroneClient
 
         public MainWindow()
         {
-            Byte[] test = new byte[2] { 0b0000_1111, 0b0011_1100 };
-            test.BytesIntoBooleanArray();
-
             InitializeComponent();
             _receiveTimer = new Timer(100);
         }
