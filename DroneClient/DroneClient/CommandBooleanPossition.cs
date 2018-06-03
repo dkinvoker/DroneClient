@@ -14,6 +14,5 @@ namespace AR.Drone.WinApp
         public const int LandIndex = 4;
         public const int StopIndex = 5;
         public const int StartIndex = 6;
-
     }
 }
