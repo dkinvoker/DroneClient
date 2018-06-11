@@ -97,6 +97,43 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Wziuuu\DroneController\AR.Drone.Avionics\AR.Drone.Avionics.csproj">
+      <Project>{19b1d7b1-c46f-4a87-a674-3350bf372a74}</Project>
+      <Name>AR.Drone.Avionics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wziuuu\DroneController\AR.Drone.Client\AR.Drone.Client.csproj">
+      <Project>{56dbf8e3-28a6-4c27-ba0a-b32352608f44}</Project>
+      <Name>AR.Drone.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wziuuu\DroneController\AR.Drone.Data\AR.Drone.Data.csproj">
+      <Project>{7d1b0b10-82f9-413f-bee9-0174753d93a1}</Project>
+      <Name>AR.Drone.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wziuuu\DroneController\AR.Drone.Infrastructure\AR.Drone.Infrastructure.csproj">
+      <Project>{5be68b3d-1112-464d-8c17-844e834bb3ba}</Project>
+      <Name>AR.Drone.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wziuuu\DroneController\AR.Drone.Media\AR.Drone.Media.csproj">
+      <Project>{dd02db21-14cf-4e03-bee2-afb2b1c49a4d}</Project>
+      <Name>AR.Drone.Media</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wziuuu\DroneController\AR.Drone.Video\AR.Drone.Video.csproj">
+      <Project>{36c63293-4c2d-41ec-b231-faf55845c014}</Project>
+      <Name>AR.Drone.Video</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wziuuu\DroneController\AR.Drone.WinApp\AR.Drone.WinApp.csproj">
+      <Project>{78c83708-bf89-4a5d-b823-21d06eed6a6b}</Project>
+      <Name>AR.Drone.WinApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wziuuu\DroneController\FFmpeg.AutoGen\FFmpeg.AutoGen.Example\FFmpeg.AutoGen.Example.csproj">
+      <Project>{5bd870d6-27b4-4208-acbf-496f2809326a}</Project>
+      <Name>FFmpeg.AutoGen.Example</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wziuuu\DroneController\FFmpeg.AutoGen\FFmpeg.AutoGen\FFmpeg.AutoGen.csproj">
+      <Project>{a536b02a-b0b1-4753-8328-17369ef09976}</Project>
+      <Name>FFmpeg.AutoGen</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

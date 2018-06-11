@@ -18,6 +18,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DroneClient.Helpers;
 using DroneClient.DroneHandle;
+using AR.Drone.Client;
 
 namespace DroneClient
 {
